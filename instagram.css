@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box; /* Adiciona um modelo de caixa mais intuitivo */
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+
+    text-decoration: none;
+    color: var(--blue);
+
+} 
+
+body{
+
+    --background: #FAFAFA; /* Forma de criar uma váriavel para cores */
+    --white: #FFFFFF;
+    --blue: #3c96ed;
+    --black: #000000;
+    --cinza: #e6e6e6;
+
+    background: var(--background); /* Forma como usa a várivel cor criada - var() */
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px; /*line height - O que faz: Espaçamento entre linhas*/
+
+}
+
+#wrapper{
+
+    /* Usar # quando for uma ID*/
+    height: 100vh;
+}
+
+#container{
+    margin: 0px auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column{
+
+    flex-grow: 1; /* Permite que a coluna cresça e ocupe o espaço disponível */
+    width: 50%;
+}
+
+.left{
+
+    background-image: url("./imagens/main-foto.png");
+    background-size: 450px; /* Ajusta o tamanho da imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.right{
+
+    margin-left: 20px;
+}
+
+.login-panel{
+    background: var(--white);
+    border: 1px solid var(--cinza);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img{
+    width: 175px;
+}
+
+.login-panel form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"], input[type="text"]{
+    background-color: var(--white);
+    border: 1px solid var(--cinza);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: var(--black);
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus{
+    outline: 0;
+    border: 1px solid var(--cinza);
+}
+
+input[type="submit"]{ /* Forma como realizamos o style de uma estrutura por tipo*/
+
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold; /* Forma como deixa o texto em negrito */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.infobox{
+
+    background-color: var(--white);
+    height: 60px;
+    border: 1px solid var(--cinza);
+    margin: 10px auto 0; /* em cima / esquerda e direita / baixo */
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Forma de deixar no centro - hor e vert*/
+}
+
+.infobox p{
+
+    user-select: none;
+}
+
+.infobox p a{
+
+    font-weight: bold;
+    user-select: none; /* Bloqueia a possibilidade de selecionar o texto*/
+}
+
+.get-app-panel{
+
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-buttons{
+    margin-top: 16px;
+}
+
+.app-buttons img{
+    height: 40px;
+    padding: 0 2px;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+}
+
+footer a{
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.text-small{
+
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+/* PAGINA CADASTRO */
+#container-cadastro{
+
+    margin: 0px auto;
+    min-height: 100%;
+    width: 400px;
+    max-width: 400PX;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.message{
+
+    margin: 10px 70px;
+}
+
+.message span{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px; /* Altura da linha entre elas */
+    color: #8e8e8e; 
+
+}
+
+.cta-button{
+
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divisor-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line{
+
+    height: 1px;
+    background-color: var(--cinza);
+    width: 35%;
+}
+
+.divisor-tag{
+
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+}
+
+.footer-inner-cadastro{
+
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* FIM PÁGINA CADASTRO */
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 850px){
+
+    .left{
+        display: none;
+    }
+
+    #container{
+        width: 70%;
+    }
+
+    .right{
+        margin: 10px;
+        
+    }
+
+}
+
+@media(max-width: 560px){
+
+    #container{
+        width: 100%;
+        margin: 0;
+    }
+
+    #container-cadastro{
+        width: 100%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"]{
+        width: 85%;
+    }
+
+    .cta-button{
+        width: 85%;
+    }
+
+    .message{
+        margin: 10px 25px;
+    }
+}
+
+/* FIM DA RESPONSIVIDADE */
