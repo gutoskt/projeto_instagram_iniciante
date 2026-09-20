@@ -46,3 +46,20 @@ $ git clone [https://github.com/gutoskt/projeto_instagram_iniciante.git](https:/
 $ cd projeto_instagram_iniciante
 
 # 3. Abra o arquivo index.html no seu navegador favorito
+
+```
+Se estiver usando o **VS Code**, clique com o botão direito no arquivo `index.html` e selecione **Open with Live Server**.
+
+---
+
+## 📬 Contato
+
+Caso queira trocar uma ideia ou acompanhar meus projetos:
+
+- **LinkedIn:** [Carlos Augusto Nunes Vieira](https://www.linkedin.com/in/carlos-augusto-nunes-vieira-602833304)
+- **Instagram:** [@devgu_to](https://www.instagram.com/devgu_to)
+- **Portfólio Atual:** [projeto-portfolio-segundo.web.app](https://projeto-portfolio-segundo.web.app)
+
+---
+
+Feito com zelo por **Carlos Augusto** ❤️
